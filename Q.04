@@ -1,0 +1,12 @@
+/* 4.Calculate the area of a triangle.  */
+
+#include <stdio.h>
+int main()
+{
+    int area, b, h;
+    printf("Enter the breath and height of the triangle: ");
+    scanf("%d %d", &b, &h);
+    area = (1 * b * h) / 2;
+    printf("The area of the triangle is: %d", area);
+    return 0;
+}
