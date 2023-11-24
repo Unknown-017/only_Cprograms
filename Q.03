@@ -1,0 +1,38 @@
+/*  3.Enter a price and calculate how many currency notes will require for that amount.
+    Currency notes are Five, Ten, Twenty, and Fifty Rupees. */
+
+#include <stdio.h>
+int main()
+{
+    int amount, five_note, ten_note, twenty_note, fifty_note;
+    five_note = ten_note = twenty_note = fifty_note = 0;
+    printf("Enter the amount: ");
+    scanf("%d", &amount);
+    if (amount >= 50)
+    {
+        fifty_note = amount / 50;
+        amount = amount - fifty_note * 50;
+    }
+    if (amount >= 20)
+    {
+        twenty_note = amount / 20;
+        amount = amount - twenty_note * 20;
+    }
+    if (amount >= 10)
+    {
+        ten_note = amount / 10;
+        amount = amount - ten_note * 10;
+    }
+    if (amount >= 5)
+    {
+        five_note = amount / 5;
+        amount = amount - five_note * 5;
+    }
+
+    printf("50 rupees notes: %d \n", fifty_note);
+    printf("20 rupees notes: %d\n", twenty_note);
+    printf("10 rupees notes: %d\n", ten_note);
+    printf("5 rupees notes: %d\n", five_note);
+
+    return 0;
+}
