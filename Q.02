@@ -1,0 +1,12 @@
+/* 2.Enter a price of an item and calculate net amount after 15% discount. */
+
+#include <stdio.h>
+int main()
+{
+    float price, netamount;
+    printf("Enter the price of the item: ");
+    scanf("%f", &price);
+    netamount = price - (15 * price) / 100;
+    printf("The net amount after discount is: %.2f", netamount);
+    return 0;
+}
