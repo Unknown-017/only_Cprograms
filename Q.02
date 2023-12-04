@@ -1,4 +1,6 @@
-/* 2.Enter a price of an item and calculate net amount after 15% discount. */
+Q 2.Enter a price of an item and calculate net amount after 15% discount. 
+
+=>
 
 #include <stdio.h>
 int main()
