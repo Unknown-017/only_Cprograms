@@ -1,0 +1,20 @@
+Q 8.Enter a number and check whether it is positive or negative. 
+
+=>
+
+#include <stdio.h>
+int main()
+{
+    int a;
+    printf("Enter a number: ");
+    scanf("%d", &a);
+    if (a > 0)
+    {
+        printf("%d is a positive no.", a);
+    }
+    else
+    {
+        printf("%d is a negative no.", a);
+    }
+    return 0;
+}
