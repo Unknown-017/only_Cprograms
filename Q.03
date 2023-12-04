@@ -1,5 +1,7 @@
-/*  3.Enter a price and calculate how many currency notes will require for that amount.
-    Currency notes are Five, Ten, Twenty, and Fifty Rupees. */
+Q  3.Enter a price and calculate how many currency notes will require for that amount.
+    Currency notes are Five, Ten, Twenty, and Fifty Rupees. 
+
+=>
 
 #include <stdio.h>
 int main()
