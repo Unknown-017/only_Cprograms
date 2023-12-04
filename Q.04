@@ -1,4 +1,6 @@
-/* 4.Calculate the area of a triangle.  */
+Q 4.Calculate the area of a triangle.  
+
+=>
 
 #include <stdio.h>
 int main()
