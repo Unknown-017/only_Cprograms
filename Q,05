@@ -1,4 +1,6 @@
-/* 5.Calculate the area and circumference of a circle. */
+Q 5.Calculate the area and circumference of a circle. 
+
+=>
 
 #include <stdio.h>
 
