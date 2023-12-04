@@ -1,4 +1,6 @@
-//1.Addition of two numbers. 
+Q 1.Addition of two numbers.
+
+=>
 
 #include <stdio.h>
 
