@@ -1,0 +1,142 @@
+Q/ 16.Enter three numbers and display the second largest number.
+
+=>
+
+#include <stdio.h>
+int main()
+{
+    int a, b, c;
+    printf("Enter three numbers: ");
+    scanf("%d %d %d", &a, &b, &c);
+    if (a > b && a > c)
+    {
+        if (b > c)
+        {
+            printf("%d is the second largest among all.", b);
+        }
+        else
+        {
+            printf("%d is the second largest among all.", c);
+        }
+    }
+    else if (b > c)
+    {
+        if (a > c)
+        {
+            printf("%d is the second largest among all.", a);
+        }
+        else
+        {
+            printf("%d is the second largest among all.", c);
+        }
+    }
+    else
+    {
+        if (a > b)
+        {
+            printf("%d is the second largest among all.", a);
+        }
+        else
+        {
+            printf("%d is the second largest among all.", b);
+        }
+    }
+    return 0;
+}
+
+Q/  17.Enter a number and check to which group it will belong. The groups are
+    0 - 9, 10 - 19, 20 - 29. 
+
+=>
+
+#include <stdio.h>
+int main()
+{
+    int a;
+    printf("Enter a number: ");
+    scanf("%d", &a);
+    if (a >= 0 && a <= 9)
+    {
+        printf("%d belongs to 0-9 group.", a);
+    }
+    else if (a >= 10 && a <= 19)
+    {
+        printf("%d belongs to 10-19 group.", a);
+    }
+    else if (a >= 20 && a <= 29)
+    {
+        printf("%d belongs to 20-29 group.", a);
+    }
+    else
+    {
+        printf("Enter a number between 0 and 29.");
+    }
+    return 0;
+}
+
+Q/ 18.Enter a character and display it either vowel or consonant. 
+
+=>
+
+#include <stdio.h>
+int main()
+{
+    char ch, lowercase, uppercase;
+    printf("Enter a character: ");
+    scanf("%c", &ch);
+    lowercase = (ch == 'a' || ch == 'b' || ch == 'c' || ch == 'd' || ch == 'e');
+    uppercase = (ch == 'A' || ch == 'B' || ch == 'C' || ch == 'D' || ch == 'E');
+    if (lowercase || uppercase)
+    {
+        printf("%c is a vowel.", ch);
+    }
+    else
+    {
+        printf("%c is a consonant.", ch);
+    }
+    return 0;
+}
+
+Q/ 19.Enter marks of three subjects of a student. Calculate the percentage and
+    display his result. Percentage >=60 is equal to first division and percenatage
+    >= 45 is equal to second division. 
+
+=>
+
+#include <stdio.h>
+int main()
+{
+    int a, b, c;
+    float perc;
+    printf("Enter marks of three subjects: ");
+    scanf("%d %d %d", &a, &b, &c);
+    perc = ((a + b + c) * 100) / 300;
+    if (perc >= 60)
+    {
+        printf("Your percentage is %.2f and you got first division.", perc);
+    }
+    else if (perc >= 45)
+    {
+        printf("Your percentage is %.2f and you got second division.", perc);
+    }
+    else
+    {
+        printf("Your percentage is %.2f", perc);
+    }
+    return 0;
+}
+
+Q/ 20.Calulate the average of any five numbers. 
+
+=>
+
+#include <stdio.h>
+int main()
+{
+    int a, b, c, d, e, avg;
+    printf("Enter five numbers: ");
+    scanf("%d %d %d %d %d", &a, &b, &c, &d, &e);
+    avg = (a + b + c + d + e) / 5;
+    printf("The average of the five numbers is: %d", avg);
+    return 0;
+}
